@@ -1,0 +1,12 @@
+{
+  "name": "ISA-Website",
+  "description": "The official website for Berkeley's Indian Student Association",
+  "version": "0.0.1",
+  "author": "Sumeet Sharma, Hardik Agrawal",
+  "dependencies": {
+    "express": "3.x","request":"~2.9.x","socket.io":"x.x.x","ejs":"x.x.x" },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
