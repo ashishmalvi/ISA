@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 });
 
 app.use(express.static(__dirname));
-
+app.use(express.static(__dirname + '/bootstrap'));
 //process.env.PORT will be set when the heroku site initializes
 server.listen(process.env.PORT || 3000);
 console.log("Server running on port:")

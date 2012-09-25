@@ -1,6 +1,23 @@
-.intro {
-    font-size: x-large;
-    color: White;
-    background-color:black;
+#myCarousel {
+    width:50%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+#welcome {
+    color: Black;
+    font-size: 26px;
+    text-shadow: black 0px 1px 2px;
+    margin-left: auto ;
+    margin-right: auto ;
     text-align: center;
+    padding: 8px 8px 8px 8px;
+}
+.brand {
+    padding: 0px 0px 0px 0px;
+}
+.navbar-inner {
+    padding: 0px;
+}
+.navbar navbar-inverse {
+    padding: 0px;
 }
