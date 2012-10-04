@@ -2,9 +2,19 @@
     width:50%;
     margin-left: auto ;
     margin-right: auto ;
+
 }
 .description {
     width:60%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.upcomingevent {
+    width:50%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.upcomingimage {
     margin-left: auto ;
     margin-right: auto ;
 }
@@ -15,14 +25,15 @@
     padding-top: 10px;
     margin-left: auto ;
     margin-right: auto ;
-    text-align: center;
+    width: 50%;
 }
 .heading {
     color: Black;
-    font-size: 26px;
+    font-size: 30px;
     margin-left: auto ;
     margin-right: auto ;
     text-align: center;
+    padding-bottom: 20px;
 }
 #welcome {
     color: Black;
