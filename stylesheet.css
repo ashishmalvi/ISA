@@ -1,3 +1,11 @@
+#sliderFrame {
+	top:100px;
+}
+.footer {
+	margin-left: auto ;
+    margin-right: auto ;
+	text-align: center;
+}
 #myCarousel {
     width:50%;
     margin-left: auto ;
@@ -9,8 +17,8 @@
     margin-left: auto ;
     margin-right: auto ;
 }
-.upcomingevent {
-    width:50%;
+.events {
+    /*width:80%;*/
     margin-left: auto ;
     margin-right: auto ;
 }
