@@ -106,25 +106,21 @@
     z-index: 3;
 }
 .contact_us_container {
-	width:1000px;
 	position: relative;
 	top: 20px;
 }
 .right_container {
 	font-size:16px;
-	position:relative;
-	top:-60px;
 	text-align:left;
-	width:265px;
-	
-
+	display:table-cell;
 }
 .left_container {
 
-	padding-left:200px;
 	font-size:16px;
 	font-weight:bold;
 	text-align:left;
+	display:table-cell;
+	padding-right:10px;
 }
 .album_preview_area {
 	margin-left: auto ;
