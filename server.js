@@ -12,6 +12,7 @@ var index2 = fs.readFileSync(__dirname + '/index2.html', 'utf8');
 var membership = fs.readFileSync(__dirname + '/membership.ejs', 'utf8');
 var contact = fs.readFileSync(__dirname + '/contact.ejs', 'utf8');
 var council = fs.readFileSync(__dirname + '/council.ejs', 'utf8');
+var raas = fs.readFileSync(__dirname + '/raas.ejs', 'utf8');
 app.use(express.cookieParser());
 
 //index http request 
@@ -34,6 +35,9 @@ app.get('/contact', function (req, res) {
 });
 app.get('/council', function (req, res) {
         res.send(ejs.render(council,{}));
+});
+app.get('/raas', function (req, res) {
+        res.send(ejs.render(raas,{}));
 });
 app.use(express.static(__dirname));
 //process.env.PORT will be set when the heroku site initializes
