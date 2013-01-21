@@ -126,3 +126,15 @@
 	font-weight:bold;
 	text-align:left;
 }
+.album_preview_area {
+	margin-left: auto ;
+    margin-right: auto ;
+	width: 300px;
+	text-align:center;
+	font-size:16px;
+	font-weight: bold;
+}
+.centered {
+  position: relative;
+  right: 50px;
+}
