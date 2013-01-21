@@ -107,6 +107,8 @@
 }
 .contact_us_container {
 	width:1000px;
+	position: relative;
+	top: 20px;
 }
 .right_container {
 	font-size:16px;
