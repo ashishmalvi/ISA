@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Indian Students Association -- Photo Gallery</title>
+    <title>Indian Students Association -- Holi 2012 Photos</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
@@ -16,7 +16,6 @@
             </style>
         <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <script type="text/javascript">
-	var photoindex = 1;
 	var garbaimages =  ['https://sphotos-b.xx.fbcdn.net/hphotos-prn1/57368_452838854757339_392190938_o.jpg','https://sphotos-a.xx.fbcdn.net/hphotos-snc7/317166_452838924757332_791648078_n.jpg','https://sphotos-a.xx.fbcdn.net/hphotos-ash4/304426_452838991423992_27408457_n.jpg','https://sphotos-b.xx.fbcdn.net/hphotos-snc6/285628_452841131423778_1861887565_n.jpg',
 				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/379134_452839021423989_1849480173_n.jpg',
 				'https://sphotos-b.xx.fbcdn.net/hphotos-snc6/196211_452839088090649_1524547673_n.jpg',
@@ -149,25 +148,12 @@
 				'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/562778_3558705040638_1095084999_n.jpg',
 				'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/533450_3558705960661_1551123534_n.jpg',
 				'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/563756_3558712120815_227130248_n.jpg']
-				var switchgarbaimage = function() {
-					$(".centered")[1].src = garbaimages[photoindex]
-					$(".centered")[2].src = holiimages[photoindex]
-					$(".centered")[0].src = diwaliimages[photoindex]
-					console.log(diwaliimages[photoindex])
-					photoindex += 1
-					if (photoindex == garbaimages.length) {
-						photoindex = 0
-					}
-				}
                 $(document).ready(function () {
                                 $('.dropdown-toggle').dropdown();
-								window.setInterval(switchgarbaimage, 3000);
-								
-								
-
-
-
-
+								var i;
+								for (i=0;i<holiimages.length;i++) {
+									$("#photo_gallery_container").append("<a href=\""+ holiimages[i] +"\" ><img style=\"width:280px;height:200px;padding-right:4px; padding-bottom:4px\" src=\""+holiimages[i]+"\"\></a>")
+								}
 
                 });
     </script>
@@ -230,17 +216,23 @@
 <div id="belowNavContainer">
     
 
-<div class="heading">ISA Photo Gallery</div>
+<div class="heading">Holi 2012</div>
 
-<div class="album_preview_area">
-	<div class="img_preview_area"><center><a href="/diwali_photos"><img class="centered" width="400" src="https://sphotos-a.xx.fbcdn.net/hphotos-prn1/18990_10152438108925368_695541577_n.jpg"/></a></center></div>
-	<div class="album_name_area">Diwali Banquet 2012</div>
-	<br><br>
-	<div class="img_preview_area"><center><a href="/raas_photos"><img class="centered" width="400" src="https://sphotos-b.xx.fbcdn.net/hphotos-prn1/57368_452838854757339_392190938_o.jpg"/></a></center></div>
-	<div class="album_name_area">Raas Garba 2012</div>
-	<br><br>
-	<div class="img_preview_area"><center><a href="/holi_photos"><img class="centered" width="400" src="https://sphotos-b.xx.fbcdn.net/hphotos-ash3/559518_3558590317770_953150476_n.jpg"/></a></center></div>
-	<div class="album_name_area">Holi 2012</div>
+	<div id="photo_gallery_container">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
 
 </div>
 

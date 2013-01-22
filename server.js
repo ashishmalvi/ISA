@@ -16,6 +16,9 @@ var raas = fs.readFileSync(__dirname + '/raas.ejs', 'utf8');
 var diwali = fs.readFileSync(__dirname + '/diwali.ejs', 'utf8');
 var holi = fs.readFileSync(__dirname + '/holi.ejs', 'utf8');
 var photos = fs.readFileSync(__dirname + '/photogallery.ejs', 'utf8');
+var diwaliphotos = fs.readFileSync(__dirname + '/diwali_photos.ejs', 'utf8');
+var raasphotos = fs.readFileSync(__dirname + '/raas_photos.ejs', 'utf8');
+var holiphotos = fs.readFileSync(__dirname + '/holi_photos.ejs', 'utf8');
 app.use(express.cookieParser());
 
 //index http request 
@@ -50,6 +53,15 @@ app.get('/holi', function (req, res) {
 });
 app.get('/photos', function (req, res) {
         res.send(ejs.render(photos,{}));
+});
+app.get('/diwali_photos', function (req, res) {
+        res.send(ejs.render(diwaliphotos,{}));
+});
+app.get('/raas_photos', function (req, res) {
+        res.send(ejs.render(raasphotos,{}));
+});
+app.get('/holi_photos', function (req, res) {
+        res.send(ejs.render(holiphotos,{}));
 });
 app.use(express.static(__dirname));
 //process.env.PORT will be set when the heroku site initializes

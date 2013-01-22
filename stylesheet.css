@@ -134,3 +134,8 @@
   position: relative;
   right: 50px;
 }
+#photo_gallery_container {
+	width:90%;
+	margin-left: auto ;
+    margin-right: auto ;
+}
