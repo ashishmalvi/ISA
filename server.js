@@ -15,6 +15,7 @@ var council = fs.readFileSync(__dirname + '/council.ejs', 'utf8');
 var raas = fs.readFileSync(__dirname + '/raas.ejs', 'utf8');
 var diwali = fs.readFileSync(__dirname + '/diwali.ejs', 'utf8');
 var holi = fs.readFileSync(__dirname + '/holi.ejs', 'utf8');
+var taste = fs.readFileSync(__dirname + '/taste.ejs', 'utf8');
 var photos = fs.readFileSync(__dirname + '/photogallery.ejs', 'utf8');
 var diwaliphotos = fs.readFileSync(__dirname + '/diwali_photos.ejs', 'utf8');
 var raasphotos = fs.readFileSync(__dirname + '/raas_photos.ejs', 'utf8');
@@ -53,6 +54,9 @@ app.get('/holi', function (req, res) {
 });
 app.get('/photos', function (req, res) {
         res.send(ejs.render(photos,{}));
+});
+app.get('/taste', function (req, res) {
+        res.send(ejs.render(taste,{}));
 });
 app.get('/diwali_photos', function (req, res) {
         res.send(ejs.render(diwaliphotos,{}));
