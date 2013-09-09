@@ -17,52 +17,108 @@
         <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <script type="text/javascript">
 				
-	var holiimages = ['https://sphotos-b.xx.fbcdn.net/hphotos-ash3/559518_3558590317770_953150476_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/555598_3558588877734_477809050_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/524035_3558590517775_128469653_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/538681_3558590797782_772177074_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/522510_3558591277794_79850808_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/385729_3558591517800_835725606_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/574475_3558591957811_1599459763_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/579428_3558593157841_1062842685_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/526136_3558596477924_493080242_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/405110_3558597317945_333866741_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/535842_3558598037963_1999028459_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/562551_3558600718030_1460152359_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/306515_3558604238118_1614162381_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/536302_3558604878134_69493571_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/534989_3558605238143_138809115_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/564943_3558605358146_1410964619_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/485737_3558608478224_1559845964_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/306236_3558609318245_307581628_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/558695_3558612318320_48891689_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/577985_3558612998337_1288753875_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/530292_3558613758356_135379764_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/154772_3558614158366_1484716746_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/524579_3558614518375_1693741395_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/574636_3558615358396_983836361_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/549212_3558615518400_32111804_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/578907_3558619678504_1920962932_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/148991_3558621318545_720571779_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/557586_3558622998587_1740429004_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/578441_3558623078589_1522379939_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/575388_3558625118640_2065317775_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/401611_3558625198642_1215715085_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/149747_3558630158766_1345795904_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/524653_3558631958811_404812881_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/522318_3558634118865_1586815791_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/562702_3558652519325_58101361_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/559439_3558649959261_311397796_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/527376_3558654359371_1583563802_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/531190_3558657439448_386139783_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/552880_3558663839608_1406047695_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/545070_3558690120265_789719019_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/562725_3558702160566_1451984226_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/555523_3558703000587_553293145_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/295230_3558701440548_916576225_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/562778_3558705040638_1095084999_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/533450_3558705960661_1551123534_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/563756_3558712120815_227130248_n.jpg']
+	var holiimages = ['https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/561919_531518163557505_426635721_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/28145_531519436890711_931402432_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/45315_531518486890806_687557428_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/525364_531525063556815_1705106001_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/59237_531526483556673_466647377_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/554254_531528496889805_2105281165_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/533965_531528603556461_971366621_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/532885_531518903557431_1267883130_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/603939_531525176890137_1439586656_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/71424_531525470223441_914561717_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/541672_531519656890689_829839582_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-frc1/s720x720/603950_531526530223335_1386799797_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/644296_531526946889960_525208891_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/11657_531527953556526_1514523190_n.jpg',
+
+'https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/s720x720/644594_531528186889836_1615504693_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/526659_531526273556694_160950237_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/549104_531514613557860_541128840_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/64406_531517820224206_631386273_n.jpg',
+
+'https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/s720x720/524088_531518183557503_1964436366_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/30561_531520210223967_1720830837_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/561919_531518163557505_426635721_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/28145_531519436890711_931402432_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/45315_531518486890806_687557428_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/525364_531525063556815_1705106001_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/59237_531526483556673_466647377_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/554254_531528496889805_2105281165_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/533965_531528603556461_971366621_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/532885_531518903557431_1267883130_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/603939_531525176890137_1439586656_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/71424_531525470223441_914561717_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/541672_531519656890689_829839582_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-frc1/s720x720/603950_531526530223335_1386799797_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/644296_531526946889960_525208891_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/11657_531527953556526_1514523190_n.jpg',
+
+'https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/s720x720/644594_531528186889836_1615504693_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/526659_531526273556694_160950237_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/549104_531514613557860_541128840_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/64406_531517820224206_631386273_n.jpg',
+
+'https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/s720x720/524088_531518183557503_1964436366_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/30561_531520210223967_1720830837_n.jpg',
+
+'https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/s720x720/11734_531514773557844_56334499_n.jpg',
+
+'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/s720x720/733863_531515126891142_457640287_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/15180_531515080224480_410978661_n.jpg',
+
+'https://sphotos-a-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/602164_531518000224188_949495275_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/529498_531518056890849_1560075809_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/10995_531517313557590_790911182_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/71458_531519046890750_1403661442_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/532144_531518116890843_1611073632_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/13898_531518766890778_1763768958_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-prn1/s720x720/560225_531518566890798_112796849_n.jpg',
+
+'https://sphotos-b-sjc.xx.fbcdn.net/hphotos-ash3/s720x720/549076_531516523557669_2086934667_n.jpg'
+]
 	
                 $(document).ready(function () {
                                 $('.dropdown-toggle').dropdown();
@@ -97,7 +153,7 @@
 							<li><a href="/holi">Holi</a></li>
                         </ul>
                     </li>
-                    <li><a href="/membership">Membership</a></li>
+                    <li><a href="/membership">Join Us</a></li>
                     <li class="dropdown" id="accountmenu">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Media<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -133,7 +189,7 @@
 <div id="belowNavContainer">
     
 
-<div class="heading">Holi 2012</div>
+<div class="heading">Holi 2013</div>
 
 	<div id="photo_gallery_container">
 	
