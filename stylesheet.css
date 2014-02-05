@@ -1,6 +1,6 @@
 /* pushes the page to the full capacity of the viewing area */
 body {
-	font-family: Roboto, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif !important;
+	font-family: sans-serif !important;
     background: url('/images/indiagate-1024.jpg') no-repeat fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
