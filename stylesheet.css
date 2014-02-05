@@ -1,9 +1,30 @@
 /* pushes the page to the full capacity of the viewing area */
 body {
+	font-family: Roboto, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif !important;
     background: url('/images/indiagate-1024.jpg') no-repeat fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
 	background-position:center; 
+}
+
+.navbar-links {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar-brand {
+	font-size: 18px !important;
+}
+
+a:link {
+    color: White !important;
+}
+.navbar-header {
+	text-align: center;
+	padding-right: 20px !important;
 }
