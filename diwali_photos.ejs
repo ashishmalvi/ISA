@@ -1,156 +1,146 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Indian Students Association -- Diwali Banquet 2012 Photos</title>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
-	<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <style>
-            body {
-                padding-top: 0px; /* When using the navbar-top-fixed */
-            }
-            </style>
-        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <script type="text/javascript">
-	var diwaliimages = ['https://sphotos-a.xx.fbcdn.net/hphotos-prn1/18990_10152438108925368_695541577_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/385267_10152438109020368_632198789_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/23325_10152438109235368_730338632_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/3388_10152438109700368_2097638844_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/76896_10152438110420368_147769590_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/76296_10152438110750368_316990393_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/65847_10152438110850368_25058587_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-frc1/734532_10152438110980368_1767610090_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-frc1/734626_10152438111160368_132657319_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/397458_10152438111685368_1800413835_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/149303_10152438112020368_164201791_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/555414_10152438112200368_73135244_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/304902_10152438112670368_688566447_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/553034_10152438112960368_1781180223_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/397690_10152438113730368_55841793_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/148379_10152438113870368_1948532521_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/555345_10152438114335368_1263495628_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/537262_10152438114745368_730782445_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/530647_10152438115505368_1927079787_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/544008_10152438115620368_755603019_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/582514_10152438115865368_1926593504_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/74153_10152438116365368_646611397_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/408460_10152438116530368_1009021970_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/554286_10152438116745368_1813508778_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/735071_10152438118405368_153752837_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/208402_10152438118635368_1140394215_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-frc1/734348_10152438118755368_1962709114_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/75044_10152438119020368_2135072409_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/74141_10152438119235368_329616272_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/74953_10152438119450368_1009142694_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/481020_10152438119990368_933166795_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/484775_10152438120350368_1485290597_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/71870_10152438120795368_242633729_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/6363_10152438120975368_898929110_n.jpg',
-	'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/270833_10152438121080368_728551347_n.jpg',
-	'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/480836_10152438121290368_738240559_n.jpg']
-			
-                $(document).ready(function () {
-                                $('.dropdown-toggle').dropdown();
-								var i;
-								for (i=0;i<diwaliimages.length;i++) {
-									$("#photo_gallery_container").append("<a href=\""+ diwaliimages[i] +"\" ><img style=\"padding-right:2px;padding-left:2px; padding-bottom:4px\" width=\"280\" height=\"204\" src=\""+diwaliimages[i]+"\"\></a>")
-								}
+  <head>
+    <title>Indian Student Association</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap3/js/bootstrap-dropdown.js"></script>
+	        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	    <script type="text/javascript">
 
-                });
-    </script>
-	<script src="js/slides.min.jquery.js"></script>
-
-
-
-</head>
-
-
-<body background="">
-    
-    <div class="navbar navbar-inverse navbar-fixed-top center">
-        <div class="navbar-inner">
-            <div class="container">
-                <ul class="nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li class="dropdown" id="accountmenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/raas">Raas Garba</a></li>
-							<li><a href="/diwali">Diwali Banquet</a></li>
-							<li><a href="/taste">Taste of India</a></li>
-							<li><a href="/holi">Holi</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/membership">Join Us</a></li>
-                    <li class="dropdown" id="accountmenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Media<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/photos">Photo Gallery</a></li>
-                           <li>&nbsp&nbsp&nbsp&nbsp&nbspVideos</li>
-                        </ul>
-                    </li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/council">Council</a></li>
-                    <!-- <li class="dropdown" id="accountmenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">MySQL</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">JavaScript</a></li>
-                            <li><a href="#">HTML5</a></li>
-                        </ul>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    
-
+		var diwaliimages = ['https://sphotos-a.xx.fbcdn.net/hphotos-prn1/18990_10152438108925368_695541577_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/385267_10152438109020368_632198789_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/23325_10152438109235368_730338632_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/3388_10152438109700368_2097638844_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/76896_10152438110420368_147769590_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/76296_10152438110750368_316990393_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/65847_10152438110850368_25058587_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-frc1/734532_10152438110980368_1767610090_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-frc1/734626_10152438111160368_132657319_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/397458_10152438111685368_1800413835_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/149303_10152438112020368_164201791_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/555414_10152438112200368_73135244_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/304902_10152438112670368_688566447_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/553034_10152438112960368_1781180223_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/397690_10152438113730368_55841793_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/148379_10152438113870368_1948532521_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/555345_10152438114335368_1263495628_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/537262_10152438114745368_730782445_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/530647_10152438115505368_1927079787_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/544008_10152438115620368_755603019_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/582514_10152438115865368_1926593504_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/74153_10152438116365368_646611397_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/408460_10152438116530368_1009021970_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/554286_10152438116745368_1813508778_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/735071_10152438118405368_153752837_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/208402_10152438118635368_1140394215_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-frc1/734348_10152438118755368_1962709114_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/75044_10152438119020368_2135072409_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/74141_10152438119235368_329616272_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/74953_10152438119450368_1009142694_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/481020_10152438119990368_933166795_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/484775_10152438120350368_1485290597_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/71870_10152438120795368_242633729_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/6363_10152438120975368_898929110_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/270833_10152438121080368_728551347_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/480836_10152438121290368_738240559_n.jpg']
 		
-		    
 
+        $(document).ready(function () {
+						var i;
+						for (i=0;i<diwaliimages.length;i++) {
+							$("#photo_gallery_container").append("<a href=\""+ diwaliimages[i] +"\" ><img style=\"padding-right:2px; padding-left:2px; padding-bottom:4px\" width=\"280\" height=\"204\" src=\""+diwaliimages[i]+"\"\></a>")
+						}
 
-<div id="belowNavContainer">
-    
+        });
+	    </script>
+		<script src="js/slides.min.jquery.js"></script>
+  </head>
+  
+  <body>
+		  <img height="40" width="70" src="/img/translogo.gif" style="position:fixed; top:5px; left:20px; z-index: 3;"/>
+		  
+		  <!-- NAVIGATION BAR-->
+		  <nav class="navbar-wrapper transparent navbar-inverse navbar-fixed-top" role="navigation" style="background-color:rgba(0,0,0,0.7) !important; z-index: 2;">
+		    <div class="container-fluid">
+		      <!-- Brand and toggle get grouped for better mobile display -->
+		      <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
+		        <a class="navbar-brand" href="#"></a>
+		      </div>
+
+		      <!-- Collect the nav links, forms, and other content for toggling -->
+		      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <div style="width:35%; float:left; color:black;">|</div>
+		        <ul style="float:left;" class="nav navbar-nav navbar-left">
+		          <li><a href="/">Home</a></li>
+				  <li><a href="/photos">Photos</a></li>
+		          <li class="dropdown">
+		            <a href="# class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		              <li><a href="/raas">Raas Garba</a></li>
+		              <li><a href="/diwali">Diwali</a></li>
+		              <li><a href="/taste">Taste of India</a></li>
+					  <li><a href="/holi">Holi</a></li>
+		            </ul>
+		          </li>
+				  <li><a href="/council">Council</a></li>
+		        </ul>
+		      </div><!-- /.navbar-collapse -->
+		    </div><!-- /.container-fluid -->
+		  </nav>
+		  
+		  <!--
+		  <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation" style="background-color:rgba(0,0,0,0.7); z-index: 2;">
+		          <div class="container">
+		            <div class="navbar-header">
+		             	
+		            </div>
+					<div class="navbar-links">
+		            	<div class="navbar-header">
+		              	  <a class="navbar-brand" href="/">Home</a>
+		            	</div>
+		            	<div class="navbar-header">
+		              <a class="navbar-brand" href="/photos">Photos</a>
+		            	</div>
+		            	<div class="navbar-header">
+		            		<a class="navbar-brand" href="#">Events</a>
+		            	</div>
+		            	<div class="navbar-header">
+		            		<a class="navbar-brand" href="/council">Council</a>
+		            	</div>
+					</div>	
+		          </div>
+		  
+	  </nav> -->
+
+			   <!-- END NAVIGATION BAR-->
+
+    <div id="belowNavContainer">
+
 
 <div class="heading">Diwali Banquet 2012</div>
 
-	<div id="photo_gallery_container">
+		<div id="photo_gallery_container">
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	</div>
 
-</div>
-
-
-
-
-
-
+    </div>
     
-</div>
-
-</body>
+  
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
-
-

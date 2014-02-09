@@ -67,7 +67,9 @@ app.get('/raas_photos', function (req, res) {
 app.get('/holi_photos', function (req, res) {
         res.send(ejs.render(holiphotos,{}));
 });
+
 app.use(express.static(__dirname));
+app.use('/img', express.static(__dirname + '/img'));
 //process.env.PORT will be set when the heroku site initializes
 server.listen(process.env.PORT || 3000);
 console.log("Server running on port:")

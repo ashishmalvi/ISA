@@ -1,146 +1,122 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Indian Students Association -- Raas Garba 2012 Photos</title>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
-	<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <style>
-            body {
-                padding-top: 0px; /* When using the navbar-top-fixed */
-            }
-            </style>
-        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <script type="text/javascript">
+  <head>
+    <title>Indian Student Association</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap3/js/bootstrap-dropdown.js"></script>
+	        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	    <script type="text/javascript">
 
-				var garbaimages = ['https://sphotos-b.xx.fbcdn.net/hphotos-prn1/57368_452838854757339_392190938_o.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/304426_452838991423992_27408457_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/379134_452839021423989_1849480173_n.jpg',
-				'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/557737_452839111423980_505162905_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/66535_452839181423973_2083820954_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/398296_452839218090636_464794859_n.jpg',
-				'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/398174_452839314757293_1859922083_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/521746_452839398090618_1518245067_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/554047_452839488090609_1802158194_n.jpg',
-				'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/311203_452839621423929_1220919996_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/69701_452839758090582_1725494219_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/548420_452839794757245_2090776037_n.jpg',
-				'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/384348_452839921423899_544016575_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/602441_452839731423918_1989778424_n.jpg',
-				'https://sphotos-b.xx.fbcdn.net/hphotos-ash4/394982_452840254757199_1008845576_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/3614_452840791423812_1217964652_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/374861_452841018090456_738020911_n.jpg',
-				'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/533586_452841231423768_2047473278_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/552193_452842311423660_1058057761_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/29387_452842464756978_669766464_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/480282_452842534756971_910635559_n.jpg',
-				'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/30977_452842581423633_201398336_n.jpg',
-				'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/534733_452842741423617_1837219625_n.jpg'
-				
-				]
-				
-
-                $(document).ready(function () {
-                                $('.dropdown-toggle').dropdown();
-								var i;
-								for (i=0;i<garbaimages.length;i++) {
-									$("#photo_gallery_container").append("<a href=\""+ garbaimages[i] +"\" ><img style=\"padding-right:2px; padding-left:2px; padding-bottom:4px\" width=\"280\" height=\"204\" src=\""+garbaimages[i]+"\"\></a>")
-								}
-
-                });
-    </script>
-	<script src="js/slides.min.jquery.js"></script>
-
-
-
-</head>
-
-
-<body background="">
-    
-    <div class="navbar navbar-inverse navbar-fixed-top center">
-        <div class="navbar-inner">
-            <div class="container">
-                <ul class="nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li class="dropdown" id="accountmenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/raas">Raas Garba</a></li>
-							<li><a href="/diwali">Diwali Banquet</a></li>
-							<li><a href="/taste">Taste of India</a></li>
-							<li><a href="/holi">Holi</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/membership">Join Us</a></li>
-                    <li class="dropdown" id="accountmenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Media<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/photos">Photo Gallery</a></li>
-                           <li>&nbsp&nbsp&nbsp&nbsp&nbspVideos</li>
-                        </ul>
-                    </li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/council">Council</a></li>
-                    <!-- <li class="dropdown" id="accountmenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">MySQL</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">JavaScript</a></li>
-                            <li><a href="#">HTML5</a></li>
-                        </ul>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    
-
+		var garbaimages = ['https://sphotos-b.xx.fbcdn.net/hphotos-prn1/57368_452838854757339_392190938_o.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/304426_452838991423992_27408457_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash4/398296_452839218090636_464794859_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/548420_452839794757245_2090776037_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-ash3/533586_452841231423768_2047473278_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/552193_452842311423660_1058057761_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-ash3/29387_452842464756978_669766464_n.jpg',
+		'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/30977_452842581423633_201398336_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/534733_452842741423617_1837219625_n.jpg',
+		'https://sphotos-a.xx.fbcdn.net/hphotos-prn1/554047_452839488090609_1802158194_n.jpg'
 		
-		    
+		]
+		
 
+        $(document).ready(function () {
+						var i;
+						for (i=0;i<garbaimages.length;i++) {
+							$("#photo_gallery_container").append("<a href=\""+ garbaimages[i] +"\" ><img style=\"padding-right:2px; padding-left:2px; padding-bottom:4px\" width=\"280\" height=\"204\" src=\""+garbaimages[i]+"\"\></a>")
+						}
 
-<div id="belowNavContainer">
-    
+        });
+	    </script>
+		<script src="js/slides.min.jquery.js"></script>
+  </head>
+  
+  <body>
+		  <img height="40" width="70" src="/img/translogo.gif" style="position:fixed; top:5px; left:20px; z-index: 3;"/>
+		  
+		  <!-- NAVIGATION BAR-->
+		  <nav class="navbar-wrapper transparent navbar-inverse navbar-fixed-top" role="navigation" style="background-color:rgba(0,0,0,0.7) !important; z-index: 2;">
+		    <div class="container-fluid">
+		      <!-- Brand and toggle get grouped for better mobile display -->
+		      <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
+		        <a class="navbar-brand" href="#"></a>
+		      </div>
+
+		      <!-- Collect the nav links, forms, and other content for toggling -->
+		      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <div style="width:35%; float:left; color:black;">|</div>
+		        <ul style="float:left;" class="nav navbar-nav navbar-left">
+		          <li><a href="/">Home</a></li>
+				  <li><a href="/photos">Photos</a></li>
+		          <li class="dropdown">
+		            <a href="# class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		              <li><a href="/raas">Raas Garba</a></li>
+		              <li><a href="/diwali">Diwali</a></li>
+		              <li><a href="/taste">Taste of India</a></li>
+					  <li><a href="/holi">Holi</a></li>
+		            </ul>
+		          </li>
+				  <li><a href="/council">Council</a></li>
+		        </ul>
+		      </div><!-- /.navbar-collapse -->
+		    </div><!-- /.container-fluid -->
+		  </nav>
+		  
+		  <!--
+		  <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation" style="background-color:rgba(0,0,0,0.7); z-index: 2;">
+		          <div class="container">
+		            <div class="navbar-header">
+		             	
+		            </div>
+					<div class="navbar-links">
+		            	<div class="navbar-header">
+		              	  <a class="navbar-brand" href="/">Home</a>
+		            	</div>
+		            	<div class="navbar-header">
+		              <a class="navbar-brand" href="/photos">Photos</a>
+		            	</div>
+		            	<div class="navbar-header">
+		            		<a class="navbar-brand" href="#">Events</a>
+		            	</div>
+		            	<div class="navbar-header">
+		            		<a class="navbar-brand" href="/council">Council</a>
+		            	</div>
+					</div>	
+		          </div>
+		  
+	  </nav> -->
+
+			   <!-- END NAVIGATION BAR-->
+
+    <div id="belowNavContainer">
+
 
 <div class="heading">Raas Garba 2012</div>
-	<div id="photo_gallery_container">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	</div>
 
-</div>
+		<div id="photo_gallery_container">
+	
+	
+	
 
-
-
-
-
-
+    </div>
     
-</div>
-
-</body>
+  
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
-
-

@@ -7,9 +7,13 @@ body {
         -o-background-size: cover;
         background-size: cover;
 	background-position:center; 
-	height: 100%;
+	font-size: 16px !important; 
 }
 
+
+ .navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4) !important;
+}
 .navbar-links {
     width: 450px;
     display: block;
@@ -23,14 +27,14 @@ body {
 }
 
 a:link {
-    color: White !important;
+    color: White;
 }
 a:hover {
-	color: White !important;
+	color: White;
 }
 
 a:visited {
-	color: White !important;
+	color: White;
 }
 
 .navbar-header {
@@ -49,6 +53,7 @@ a:visited {
 }
 
 #belowNavContainer {
+	color: white;
     margin-left: auto ;
     margin-right: auto ;
 	width: 100%;
@@ -74,3 +79,19 @@ a:visited {
 p {
 	color: White;
 }
+.navbar-inverse {
+	background-color: #000000 !important;
+}
+.dropdown-menu {
+	background-color: #000000 !important;
+	color: #000000 !important;
+}
+.dropdown-menu>li>a  {
+	color: #999 !important;
+}
+#photo_gallery_container {
+	width:1136px;
+	margin-left: auto ;
+    margin-right: auto ;
+}
+

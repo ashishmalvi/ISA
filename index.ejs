@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Indian Students Association</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 	 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap3/js/bootstrap-dropdown.js"></script>
   </head>
   
   <body>
-		  <img height="60" width="100" src="/img/translogo.gif" style="position:fixed; top:5px; left:20px; z-index: 3;"/>
-		  <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation" style="background-color:rgba(0,0,0,0.7); z-index: 2;">
-		          <div class="container">
-		            <div class="navbar-header">
-		             	
-		            </div>
-					<div class="navbar-links">
-		            	<div class="navbar-header">
-		              	  <a class="navbar-brand" href="#">Home</a>
-		            	</div>
-		            	<div class="navbar-header">
-		              <a class="navbar-brand" href="#">Photos</a>
-		            	</div>
-		            	<div class="navbar-header">
-		            		<a class="navbar-brand" href="#">Events</a>
-		            	</div>
-		            	<div class="navbar-header">
-		            		<a class="navbar-brand" href="#">Council</a>
-		            	</div>
-					</div>	
-		          </div>
-		  
+	  <img height="40" width="70" src="/img/translogo.gif" style="position:fixed; top:5px; left:20px; z-index: 3;"/>
+	  
+	  <!-- NAVIGATION BAR-->
+	  <nav class="navbar-wrapper transparent navbar-inverse navbar-fixed-top" role="navigation" style="background-color:rgba(0,0,0,0.7) !important; z-index: 2;">
+	    <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#"></a>
+	      </div>
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <div style="width:35%; float:left; color:black;">|</div>
+	        <ul style="float:left;" class="nav navbar-nav navbar-left">
+	          <li><a href="/">Home</a></li>
+			  <li><a href="/photos">Photos</a></li>
+	          <li class="dropdown">
+	            <a href="/events" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="/raas">Raas Garba</a></li>
+	              <li><a href="/diwali">Diwali</a></li>
+	              <li><a href="/taste">Taste of India</a></li>
+				  <li><a href="/holi">Holi</a></li>
+	            </ul>
+	          </li>
+			  <li><a href="/council">Council</a></li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	    </div><!-- /.container-fluid -->
 	  </nav>
+	  
+	  <!--
+	  <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation" style="background-color:rgba(0,0,0,0.7); z-index: 2;">
+	          <div class="container">
+	            <div class="navbar-header">
+	             	
+	            </div>
+				<div class="navbar-links">
+	            	<div class="navbar-header">
+	              	  <a class="navbar-brand" href="/">Home</a>
+	            	</div>
+	            	<div class="navbar-header">
+	              <a class="navbar-brand" href="/photos">Photos</a>
+	            	</div>
+	            	<div class="navbar-header">
+	            		<a class="navbar-brand" href="#">Events</a>
+	            	</div>
+	            	<div class="navbar-header">
+	            		<a class="navbar-brand" href="/council">Council</a>
+	            	</div>
+				</div>	
+	          </div>
+	  
+  </nav> -->
+
+		   <!-- END NAVIGATION BAR-->
+		  
 
 	  
 	  <div style="height: 100px;">
@@ -59,6 +104,24 @@
 	          </p>
 	  		</div>
 	      </div>
+		  
+		  <br>
+		   <div class="heading">ISA Membership</div>
+ 	      <div class="description">
+ 	  		<div>
+ 	          <p style="text-indent:30px">
+ 	          Anyone can become a member of ISA. As a member, you will receive the following benefits:
+                <ul>
+                <li>An ISA member card with special discounts</li>
+                <li>Discounted tickets to our events</li>
+                <li>Free admission to movie nights</li>
+                </ul>
+		   Find us at our table on Sproul to sign up!	
+	   </p>
+ 	  		</div>
+ 	      </div>
+		   
+		  
 	      </div>
 		  
 	
