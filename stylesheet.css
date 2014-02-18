@@ -94,4 +94,12 @@ p {
 	margin-left: auto ;
     margin-right: auto ;
 }
+.photo_album_cover {
+	display: inline;
+}
+.photo_album_name {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}
 
