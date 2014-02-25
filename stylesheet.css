@@ -9,7 +9,9 @@ body {
 	background-position:center; 
 	font-size: 16px !important; 
 }
-
+html {
+	height:100%;
+}
 
  .navbar.transparent.navbar-inverse .navbar-inner {
    background: rgba(0,0,0,0.4) !important;
